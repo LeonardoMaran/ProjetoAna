@@ -11,13 +11,6 @@
     border: 0;
 }
 
-@font-face {
-    font-family: 'Aqua Grotesque';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Aqua Grotesque'), url('aqua.woff') format('woff');
-}
-
 
 /* Button styling */
 
@@ -31,7 +24,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-    color: rgba(201, 211, 64, 0.918);
+    color: rgba(0, 0, 0, 0.918);
 }
 
 
@@ -41,16 +34,17 @@
   */
 
 .main-menu {
+    background-color: rgb(255, 255, 255);
     position: absolute;
     display: none;
-    left: -200px;
+    left: -10px;
     top: 0;
     height: 100%;
     overflow-y: scroll;
     overflow-x: visible;
     transition: left 0.3s ease, box-shadow 0.3s ease;
     z-index: 999;
-    font-family: 'Aqua Grotesque';
+    font-family: 'Quicksand', sans-serif;
 }
 
 .main-menu ul {
@@ -63,26 +57,34 @@
     box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
     min-height: 100%;
     width: 200px;
-    background: #1a1a1a;
+    background: #ffffff;
+}
+
+.logo {
+    background-color: rgb(255, 255, 255);
+    margin: 0 30px 0 10px;
+    padding: 0px 0px;
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .main-menu a {
     display: block;
-    padding: .75em 15px;
+    padding: 24px 10px;
     line-height: 1em;
     font-size: 1em;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-bottom: 1px solid #383838;
 }
 
 .main-menu li:first-child a {
-    border-top: 1px solid #383838;
+    border-top: 1px solid #38383818;
 }
 
 .main-menu a:hover,
 .main-menu a:focus {
-    background: #333;
+    background: rgba(51, 51, 51, 0.103);
     text-decoration: underline;
 }
 
@@ -140,7 +142,7 @@
     height: 100%;
     z-index: 998;
     background: #000;
-    background: rgba(0, 0, 0, .85);
+    background: rgba(0, 0, 0, 0.315);
     cursor: default;
 }
 
@@ -170,7 +172,7 @@
         top: auto;
         height: auto;
         display: block;
-        font-family: 'Aqua Grotesque';
+        font-family: 'Quicksand', sans-serif;
     }
     .main-menu ul {
         display: flex;
@@ -184,7 +186,7 @@
         background: none;
     }
     .main-menu a {
-        color: rgb(44, 44, 44);
+        color: rgba(44, 44, 44, 0.993);
         border: 0 !important;
         /* Remove borders from off-canvas styling */
     }
@@ -223,10 +225,4 @@ article {
 article h2 {
     font-weight: 500;
     font-size: 28px;
-}
-
-.logo {
-    margin: 0 30px 0 10px;
-    font-size: 1.5em;
-    font-family: 'Aqua Grotesque';
 }
