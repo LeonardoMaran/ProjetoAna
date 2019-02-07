@@ -1,49 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="menu.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor="#dcdcdc">
+<body>
+    <nav>
+        <div class="logo">
+            <h4>the Nav</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">projetcs</a></li>
+        </ul>
+        <div class="burguer">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
+    <script src="app.js"></script>
 
-    <header>
-        <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
-            <span class="sr-only">Open main menu</span>
-            <span class="fa fa-bars" aria-hidden="true"></span>
-        </a>
-
-        <h1 class="logo">Ana Cabelo e Estética</h1>
-
-        <nav id="main-menu" class="main-menu" aria-label="Main menu">
-            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
-                <span class="sr-only">Close main menu</span>
-                <span class="fa fa-times" aria-hidden="true"></span>
-            </a>
-            <ul>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Especial</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Contatos</a></li>
-
-            </ul>
-        </nav>
-        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-    </header>
-
-    <script id="__bs_script__">
-        //<![CDATA[
-        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
-        //]]>
-    </script>
 </body>
 
 </html>
