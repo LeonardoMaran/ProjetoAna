@@ -1,59 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Smooth Fade-Up Responsive Navigation</title>
-      <link rel="stylesheet" href="style.css">
-      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <nav>
+        <div class="logo">
+            <h4>Ana Cabelo e Estética</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Especial</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <div class="burguer">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
-      <nav>
-            <span id="brand">
-                  <a href="index.html">Brand</a>
-            </span>
-
-            <ul id="menu">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">FAQ</a></li>
-            </ul>
-
-            <div id="toggle">
-                  <div class="span" id="one"></div>
-                  <div class="span" id="two"></div>
-                  <div class="span" id="three"></div>
-            </div>
-      </nav>
-
-      <div id="resize">
-            <ul id="menu">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">FAQ</a></li>
-            </ul>
-      </div>
-
-      <div class="content">
-            <h1>Smooth Fade-Up Navigation</h1>
-      </div>
-
-      <script>
-
-      $("#toggle").click(function() {
-
-      $(this).toggleClass('on');
-      $("#resize").toggleClass("active");
-
-      });
-
-
-      </script>
+    <script src="app.js"></script>
 
 </body>
+
 </html>
