@@ -6,7 +6,88 @@
 }
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    background: #282020;
+    color: white;
+    padding-top: 40px;
+    padding: 40px;
+}
+
+.container-center {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+
+.container-footer-all {
+    width: 100%;
+    height: 20%;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1 {
+    width: 50%;
+}
+
+.colum1 h1 {
+    font-size: 14px;
+    font-family: "Poppins";
+}
+
+.colum1 p {
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 28px;
+    font-family: "Poppins";
+}
+
+.column2 {
+    max-width: 50%;
+}
+
+.column2 h1 {
+    font-size: 14px;
+    font-family: "Poppins";
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img {
+    width: 35px;
+    height: 36px;
+}
+
+.row2 {
+    margin-top: 20px;
+    font-family: "Poppins";
+}
+
+.row2 img {
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 150px;
+    font-family: "Poppins";
+}
+
+.container-footer {
+    width: 100%;
+    font-family: "Poppins";
 }
 
 
@@ -15,7 +96,7 @@
 .slideshow-container {
     padding: 1%;
     max-width: 100%;
-    max-height: 50px;
+    max-height: 100%;
     position: relative;
     margin: auto;
     top: 50px;
@@ -26,67 +107,22 @@
 
 .mySlides {
     display: none;
-    height: 50%;
+    height: 100%;
 }
-
-
-/* Next & previous buttons */
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 4s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-
-/* Position the "next button" to the right */
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* Caption text */
 
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+    color: white;
+    font-size: 20px;
+    padding: 20px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
+    font-family: "Poppins";
 }
 
 
 /* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
 
 
 /* The dots/bullets/indicators */
@@ -95,6 +131,7 @@
     cursor: pointer;
     height: 15px;
     width: 15px;
+    bottom: 10%;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -242,7 +279,7 @@ nav #menu li a {
     position: absolute;
     background-color: indianred;
     width: 100%;
-    height: 100%;
+    height: 600px;
     visibility: hidden;
     opacity: 0;
     transition: all 1s ease-out;
@@ -250,7 +287,7 @@ nav #menu li a {
 }
 
 #resize #menu {
-    height: 90px;
+    height: 100%;
     display: table-cell;
     vertical-align: center;
 }
@@ -279,7 +316,7 @@ nav #menu li a {
     opacity: 0.99;
 }
 
-@media only screen and(max-width: 768px),
+@media only screen and (max-width: 768px),
 screen and (max-width: 768px) {
     #toggle {
         visibility: visible;
