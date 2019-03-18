@@ -276,7 +276,7 @@ nav #menu li a {
 #resize {
     z-index: 1;
     top: 0px;
-    position: absolute;
+    position: fixed;
     background-color: indianred;
     width: 100%;
     height: 600px;
@@ -341,4 +341,42 @@ screen and (min-width: 768px) {
     #resize {
         visibility: hidden !important;
     }
+}
+
+
+/* reset básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* conteiner */
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 10px;
+}
+
+.teste {
+    background: #e9baf7;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 200;
+    line-height: 50px;
+    margin: 2px 0;
+    color: black;
+}
+
+.big {
+    padding: 25px 25px;
+    height: 100px;
 }
