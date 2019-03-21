@@ -321,7 +321,7 @@ nav #menu li a {
     opacity: 0.99;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 44em) {
     #toggle {
         visibility: visible;
         opacity: 1;
@@ -340,7 +340,7 @@ nav #menu li a {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 44em) {
     #resize {
         visibility: hidden !important;
     }
