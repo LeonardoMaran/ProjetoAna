@@ -6,20 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ana cabelo e estética</title>
-
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/image-hover.css">
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-
-
-
-
 </head>
 
 <body>
@@ -37,7 +26,6 @@
             <li><a href="eventos.html">Eventos</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
-
 
         <div id="toggle">
             <div class="span" id="one"></div>
@@ -57,111 +45,44 @@
         </ul>
     </div>
 
+    <div class="content">
+        <h1>Eventos</h1>
+    </div>
+
+
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-            <div class="numbertext"></div>
+
             <img src="img/img1.jpg" style="width:100%">
             <div class="text">Ana Cabelo e Estética</div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext"></div>
+
             <img src="img/img2.jpg" style="width:100%">
             <div class="text">Ana Cabelo e Estética</div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext"></div>
+
             <img src="img/img3.jpg" style="width:100%">
             <div class="text">Ana Cabelo e Estética</div>
         </div>
 
-    </div>
-
-
-    <div class="g2">
-    </div>
-
-    <div class="container-fluid my-container2">
-
-        <div class="row my-row2">
-            <div class=" col-md-11 col-sm-11 my-col">
-
-                <div class="text-myrow2">
-
-                    <h2>ANA Cabelo & Estética</h2>
-
-
-                </div>
-            </div>
-
-
-
-        </div>
 
     </div>
+    <br>
 
-    <div class="g2">
+    <!-- The dots/circles -->
+
+    <div class="container-center">
+
+
+
+
     </div>
-
-    <div class="container-fluid my-container3">
-        <div class="row  my-row3">
-            <div class="col-md-3 col-sm-5 my-col3">
-                <figure class="snip1584"><img src="img/Depilação.jpg" alt="sample87" />
-                    <figcaption>
-                        <h3>Depilaçāo</h3>
-                        <h5>Saiba Mais</h5>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-md-3 col-sm-5 my-col3">
-                <figure class="snip1584 hover"><img src="img/corte.jpg" alt="sample119" />
-                    <figcaption>
-                        <h3>Corte de Cabelo</h3>
-                        <h5>Saiba Mais</h5>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-
-            <div class="col-md-3 col-sm-5 my-col3">
-                <figure class="snip1584"><img src="img/manicure.jpeg" alt="sample120" />
-                    <figcaption>
-                        <h3>Manicure</h3>
-                        <h5>Saiba Mais</h5>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <div class="g2">
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="g2"></div>
-
-
     <footer>
 
 
@@ -187,26 +108,26 @@
                     <div class="row2">
                         <img src="">
                         <label>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-
-                    </label>
-
-                    </div>
-
-                    <div class="row2">
-                        <img src="">
-                        <label>
-                            0 0000 0000 00
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     
                         </label>
 
                     </div>
+
                     <div class="row2">
                         <img src="">
                         <label>
-                                    nonononononono@hotmail.com
+                                0 0000 0000 00
         
                             </label>
+
+                    </div>
+                    <div class="row2">
+                        <img src="">
+                        <label>
+                                        nonononononono@hotmail.com
+            
+                                </label>
 
                     </div>
 
@@ -257,28 +178,6 @@
             $("#resize").toggleClass("active");
 
         });
-    </script>
-
-
-
-    <script id="__bs_script__">
-        //<![CDATA[
-        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
-        //]]>
-    </script>
-    <script>
-        var snippet = [].slice.call(document.querySelectorAll('.hover'));
-        if (snippet.length) {
-            snippet.forEach(function(snippet) {
-                snippet.addEventListener('mouseout', function(event) {
-                    if (event.target.parentNode.tagName === 'figure') {
-                        event.target.parentNode.classList.remove('hover')
-                    } else {
-                        event.target.parentNode.classList.remove('hover')
-                    }
-                });
-            });
-        }
     </script>
 
 </body>
