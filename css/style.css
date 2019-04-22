@@ -11,10 +11,7 @@
 
 footer {
     width: 100%;
-    background: #282020;
-    color: white;
     padding-top: 40px;
-    padding: 40px;
 }
 
 .g2 {
@@ -380,7 +377,7 @@ nav #menu li a {
 }
 
 .my-row2 {
-    height: 70%;
+    height: 50px;
     width: 100%;
     -webkit-justify-content: center;
     justify-content: center;
@@ -436,4 +433,60 @@ nav #menu li a {
     display: block;
     margin: 0;
     text-align: center;
+}
+
+.content-left {
+    background-color: red;
+    height: 400px;
+}
+
+.content-center {
+    background-color: green;
+    height: 400px;
+}
+
+.content-right {
+    background-color: purple;
+    height: 400px;
+}
+
+.copyright {
+    background-color: black;
+    height: 50px;
+}
+
+.footer-info h1 {
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 26px;
+}
+
+.footer-info p {
+    color: #fff;
+    font-family: "Poppins";
+}
+
+.footer-links h1 {
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 26px;
+}
+
+.footer-links li {
+    color: #fff;
+}
+
+.footer-contact h4 {
+    color: #fff;
+    font-family: "Poppins";
+}
+
+.footer-nwesletter h4 {
+    color: #fff;
+    font-family: "Poppins";
+}
+
+.footer-nwesletter p {
+    color: #fff;
+    font-family: "Poppins";
 }
