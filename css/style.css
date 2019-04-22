@@ -438,16 +438,21 @@ nav #menu li a {
 .content-left {
     background-color: red;
     height: 400px;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .content-center {
     background-color: green;
     height: 400px;
+    margin-top: 20px;
 }
 
 .content-right {
     background-color: purple;
     height: 400px;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .copyright {
