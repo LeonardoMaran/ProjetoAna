@@ -467,47 +467,74 @@ nav #menu li a {
 }
 
 .footer-info p {
-    color: #fff;
+    color: #C9C9C9;
+    font-family: "Poppins";
+    
+}
+
+
+
+.footer-end p {
+    color: #C9C9C9;
     font-family: "Poppins";
 }
 
-.footer-links h1 {
+.footer-end h1 {
     color: #fff;
-    font-family: "FuturaPTMedium";
+    font-family: "Poppins";
     font-size: 26px;
 }
 
 .footer-links h3 {
     color: #fff;
-    font-family: "FuturaPTMedium";
+    font-family: "Poppins";
     font-size: 18px;
-}
-.siga-nos-icons{
-  display: inline-flex;
-  position: left;
+    position: relative;
+    left: 7%;
+    
 }
 
-.footer-links li {
-    color: #fff;
+.footer-contact p {
+    color: #C9C9C9;
+    font-family: "Poppins";
+    
 }
+
+.siganos h3 {
+    position: relative;
+    left: 7%;
+}
+
+
+
+.siganos-icons{
+    position: relative;
+    left: 1%;  
+    
+}
+.siganos-icons-2{
+display: flex;
+ position: relative;
+    left: 10px;  
+}
+
 .middle{
     width: 5%;
 }
 
-.footer-contact h4 {
-    color: #fff;
-    font-family: "Poppins";
+.footer-top {
+    background-color:#282020;
 }
 
-.footer-nwesletter h4 {
+.footer-contact h1 {
     color: #fff;
     font-family: "Poppins";
+    font-size: 26px;
 }
 
-.footer-nwesletter p {
-    color: #fff;
-    font-family: "Poppins";
-}
+
+
+
 
 @font-face {
     font-family: FuturaPTMedium;
@@ -528,6 +555,7 @@ nav #menu li a {
     font-family: MarionRegular;
 }
 .footer-below {
+        align-items: center;
        background-color: #171717;
-
+       height: 5%;
 }
