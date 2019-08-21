@@ -1,0 +1,70 @@
+.servicos-header-image{
+    width: 100%;
+   
+}
+
+.bloco{
+    width: 100%;
+    height: 900px;
+}
+
+.titulo-bloco{
+    width: 100%;
+    height: 50px;
+}
+
+.titulo-bloco h1{
+    text-align: center;
+    font-family: "Poppins";
+    text-shadow: #171717;
+
+    font-size: 46px;
+}
+
+.coluna2-0-servicos-subtitulo{
+
+    width: 100%;
+    height:50;
+    text-align: center;
+    font-family: "Poppins";
+    text-shadow: #171717;
+            
+}
+
+.coluna2-1-servicos{
+
+    
+    width: 100%;
+    height:50px;
+    background-color: #717171;
+            
+}
+
+.coluna2-2-servicos{
+
+    width: 100%;
+    height:100px;
+    background-color:white;
+
+            
+}
+
+.coluna2-2-servicos h3{
+
+    text-align: center;
+    font-family: "Poppins";
+    text-shadow: #171717;
+    font-size: 12px;
+
+    
+            
+}
+
+.coluna1-servicos{
+    
+    width: 100%;
+    height:50px;
+    background-color:rgb(197, 190, 190);
+}
+
+
