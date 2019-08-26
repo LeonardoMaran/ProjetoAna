@@ -1,0 +1,24 @@
+.bloco2{
+    width: 100%;
+  
+    background-color: blueviolet;
+}
+
+.bloco3{
+    width: 100%;
+    height: 40px;
+    background-color: aqua;
+}
+
+.titulo-bloco2{
+    width: 100%;
+    height: 70px;
+}
+
+.fundo1{
+  background-color: rgb(66, 107, 107);
+}
+
+.fundo2{
+    background-color: aquamarine;
+  }
