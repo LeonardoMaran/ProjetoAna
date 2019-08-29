@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/image-hover.css">
     <link rel="stylesheet" href="css/bubba.css">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/form.css">
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -90,29 +91,51 @@
                         </div>
                                 
                         <div class="col-lg-6">
-                            <div class="container fundo2">
-                                <div class="row bloco2">
-                                    <div class="col-lg-6 ">
-                                        <h1>bloco2</h1>
+                            <div class="container-fluid fundo2">
+                                
+                                    <div class="col-sm-12 " style="text-align: center">
+                                        <h2>Formulário</h2>
                                     </div>
-                                    </div>
-                                        <div class="row fundo1">
-                                        <div class="col-lg-2">
-                                            <div class="bloco3"><h1>bloco3</h1></div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                    <div class="bloco3"><h1>bloco3</h1></div>
+                                    
+                                    <form action="" class="contact-form" >
+                                        
+                                        <div class="col-sm-12">
+                                            <div class="input-block">
+                                                <label for="">Nome Completo</label>
+                                                <input type="text" required autocomplete="off" class="form-control"/>
+                                              </div>
+                                        
+                                        <div class="row ">
+                                            <div class="col-sm-6">
+                                                <div class="input-block">
+                                                    <label for="">Telefone</label>
+                                                    <input type="tel" required autocomplete="off"  class="form-control"/>
+                                                  </div>
                                                 </div>
 
-                                                <div class="col-lg-2">
-                                                        <div class="bloco3"><h1>bloco3</h1></div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-block">
+                                                        <label for="">Email</label>
+                                                        <input type="email" required autocomplete="off"  class="form-control"/>
+                                                      </div>
                                                     </div>
-                                            </div>
-                                            <div class="row bloco2">
-                                                    <div class="col-lg-6 ">
-                                                        <h1>bloco2</h1>
+                                                </div>
+
+                                           
+                                            
+                                            <div class="row ">
+                                                    <div class="col-sm-12 ">
+                                                        <div class="input-block textarea">
+                                                            <label for="">Escreva sua mensagem aqui</label>
+                                                            <textarea rows="5" type="text" required autocomplete="off" class="form-control"></textarea>
+                                                          </div>
                                                     </div>
                                                     </div>
+
+                                                    <div class="col-sm-12">
+                                                        <button class="square-button">Enviar</button>
+                                                      </div>
+                                                </form>
                                 
                             </div>
                         </div>
@@ -271,6 +294,38 @@
 <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
 //]]></script>
+
+<script>
+
+//material contact form animation
+$('.contact-form').find('.form-control').each(function() {
+  var targetItem = $(this).parent();
+  if ($(this).val()) {
+    $(targetItem).find('label').css({
+      'top': '10px',
+      'fontSize': '14px'
+    });
+  }
+})
+$('.contact-form').find('.form-control').focus(function() {
+  $(this).parent('.input-block').addClass('focus');
+  $(this).parent().find('label').animate({
+    'top': '10px',
+    'fontSize': '14px'
+  }, 300);
+})
+$('.contact-form').find('.form-control').blur(function() {
+  if ($(this).val().length == 0) {
+    $(this).parent('.input-block').removeClass('focus');
+    $(this).parent().find('label').animate({
+      'top': '25px',
+      'fontSize': '18px'
+    }, 300);
+  }
+})
+
+</script>
+
 
 
 </body>
