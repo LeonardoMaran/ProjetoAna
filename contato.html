@@ -327,22 +327,34 @@ $('.contact-form').find('.form-control').blur(function() {
 </script>
 
 <script>
+    var map
     function initMap(){
-        var location = {lat: -25.363, lng: 131.04 };
-        var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: location 
+        var location = {lat: -23.6, lng: -46.618520 };
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 2,
+          center: new google.maps.LatLng(2.8,-187.3),
+          mapTypeId: 'terrain'
 
         });
+
+        window.eqfeed_callback = function(results) {
+        for (var i = 0; i < results.features.length; i++) {
+          var coords = results.features[i].geometry.coordinates;
+          var latLng = new google.maps.LatLng(coords[1],coords[0]);
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+        }
+      }
 
     }
     
 
 </script>
 
-<script async defer src="https://maps.googleapis.com/maps/js?key=AIzaSyDNez26X3kUwSUhG53cd5OGnCVbahbF3RA&callback=initMap"></script>
-
-</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNez26X3kUwSUhG53cd5OGnCVbahbF3RA&callback=initMap"
+  type="text/javascript"></script>
 
 </body>
 
