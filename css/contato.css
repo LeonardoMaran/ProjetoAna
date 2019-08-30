@@ -23,6 +23,12 @@
 .fundo2{
     background:url("../img/contato/fom.jpg") bottom no-repeat;
 
-  }
-/*
-  
+  }*/
+
+ 
+#map{ 
+   height: 500px;
+   width: 100%;
+
+
+ } 

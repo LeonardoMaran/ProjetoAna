@@ -85,7 +85,7 @@
                 <div class="container-fluid">
                     <div class="row" >
                          <div class="col-lg-6">
-                            <div class="bloco2">
+                            <div id="map">
                                     <h1>bloco1</h1>
                             </div>
                         </div>
@@ -326,7 +326,23 @@ $('.contact-form').find('.form-control').blur(function() {
 
 </script>
 
+<script>
+    function initMap(){
+        var location = {lat: -25.363, lng: 131.04 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: location 
 
+        });
+
+    }
+    
+
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/js?key=AIzaSyDNez26X3kUwSUhG53cd5OGnCVbahbF3RA&callback=initMap"></script>
+
+</script>
 
 </body>
 
