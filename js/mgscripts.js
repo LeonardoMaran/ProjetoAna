@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
 	$('.zoom-gallery').magnificPopup({
 		delegate: 'a',

@@ -524,3 +524,26 @@ img.mfp-img {
           -webkit-filter: grayscale(0);
           -webkit-transform: scale(1.01);
         }
+
+        .text-divider-double {
+          position: relative;
+          margin: 0px 5px 25px 5px;
+         
+          text-align: center;
+          
+          
+        } 
+
+        #icon {
+          background-image: url("img/home/icons/icons8-barber_scissors_filled.svg");
+        }
+
+        #svgObject {
+          transition: all .30s ease-in-out;
+            }
+        
+         #svgObject:hover {
+          transform: scale(1.2);
+        }
+        
+        
