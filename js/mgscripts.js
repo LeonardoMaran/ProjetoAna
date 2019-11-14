@@ -1,7 +1,7 @@
 
 
 $(document).ready(function() {
-	$('.zoom-gallery').magnificPopup({
+	$('.zoom-gallery-gray').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		closeOnContentClick: false,
@@ -23,7 +23,7 @@ $(document).ready(function() {
 				return element.find('img');
 			}
 		}
-		
+
 	});
 });
 

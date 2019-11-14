@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	$('.zoom-gallery2').magnificPopup({
+	$('.zoom-gallery-sepia').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		closeOnContentClick: false,
@@ -22,6 +22,6 @@ $(document).ready(function() {
 				return element.find('img');
 			}
 		}
-		
+
 	});
 });

@@ -12,6 +12,20 @@
 
 }
 
+.bloco1-servicos{
+  background-color: blueviolet;
+  width: 100%;
+  height:200px;
+
+}
+
+.bloco2-servicos{
+    background-color: blue;
+    width: 100%;
+    height:200px;
+
+}
+
 .no-gutter {
     margin-right: 0;
     margin-left: 0;
@@ -513,29 +527,29 @@ img.mfp-img {
       opacity: 0;
     }
 
-    .zoom-gallery img {
+    .zoom-gallery-sepia img {
       /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-        filter: gray; /* IE5+ */
-        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        filter: none; /* IE5+ */
+        -webkit-filter: sepia();
         -webkit-transition: all .8s ease-in-out;
       }
 
-      .zoom-gallery img:hover {
+      .zoom-gallery-sepia img:hover {
       filter: none;
-        -webkit-filter: grayscale(0);
+        -webkit-filter: sepia(0);
         -webkit-transform: scale(1.01);
       }
 
-      .zoom-gallery2 img {
+      .zoom-gallery-gray img {
         /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-          filter: blue;
-          -webkit-filter:
+          filter: none; /* IE5+ */
+          -webkit-filter: grayscale();
           -webkit-transition: all .8s ease-in-out;
         }
 
-        .zoom-gallery2 img:hover {
+        .zoom-gallery-gray img:hover {
         filter: none;
-          -webkit-filter: grayscale(0);
+        -webkit-filter: grayscale(0);
           -webkit-transform: scale(1.01);
         }
 
