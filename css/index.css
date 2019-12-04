@@ -61,11 +61,7 @@
     margin-top: 0;
   }
 
-  .bloco3-galeria-titulo{
-    background-color: blueviolet;
-    width: 100%;
-    height:90px;
-  }
+
 
   .bloco4-galeria-imagem{
     background-color: rgb(129, 129, 129);
@@ -120,9 +116,50 @@
 }
 
 .bloco-osalao-titulo{
-    background-color: blueviolet;
+
     width: 100%;
     height:90px;
+}
+
+.bloco10-servicos-titulo h1{
+     color: rgb(17, 16, 16);
+  position: relative;
+ text-align: center;
+ top: 15% ;
+ text-shadow: rgb(137, 147, 207) 0.5px 0.5px 5px ;
+
+  font-family: "Poppins";
+    font-weight: 500px;
+
+   font-size: 42px;
+}
+
+.bloco-osalao-titulo h1{
+ color: rgb(143, 92, 92);
+  position: relative;
+ text-align: center;
+ top: 30% ;
+ text-shadow: rgb(137, 147, 207) 0.5px 0.5px 5px ;
+
+  font-family: "Poppins";
+
+
+   font-size: 48px;
+
+}
+
+.bloco3-galeria-titulo h2 {
+  color: rgb(17, 16, 16);
+  position: relative;
+ text-align: center;
+ top: 15% ;
+ text-shadow: rgb(137, 147, 207) 0.5px 0.5px 5px ;
+
+  font-family: "Poppins";
+    font-weight: 500px;
+
+   font-size: 42px;
+
 }
 
 .bloco-osalao2{
@@ -162,11 +199,7 @@
     width: 100%;
     height: 35px;
 }
-.bloco10-servicos-titulo{
-    background-color: blueviolet;
-    width: 100%;
-    height:90px;
-}
+
 
 
 /* magnific popup */

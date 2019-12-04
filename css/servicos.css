@@ -14,11 +14,16 @@
 }
 
 .titulo-bloco h1{
-    text-align: center;
-    font-family: "Poppins";
-    text-shadow: #171717;
+  color: rgb(0, 0, 0);
+  position: relative;
+ text-align: center;
+ top: 28% ;
+ text-shadow: rgb(137, 147, 207) 0.5px 0.5px 5px ;
 
-    font-size: 46px;
+  font-family: "Poppins";
+    font-weight: 500px;
+
+   font-size: 42px;
 }
 
 .coluna2-0-servicos-subtitulo{
