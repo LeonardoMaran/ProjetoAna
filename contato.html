@@ -19,6 +19,10 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+
+
+
+
 </head>
 
 <body>
@@ -49,7 +53,7 @@
             <li><a href="servicos.html">Serviços</a></li>
             <li><a href="osalao.html">O Salāo</a></li>
             <li><a href="contato.html">Contato</a></li>
-            
+
         </ul>
     </div>
 
@@ -68,7 +72,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="bloco">
-                        
+
                     </div>
                 </div>
             </div>
@@ -86,57 +90,63 @@
                     <div class="row" >
                          <div class="col-lg-6">
                             <div id="map">
-                                    
+
                             </div>
                         </div>
-                                
+
                         <div class="col-lg-6">
                             <div class="container-fluid fundo2">
-                                
+
                                     <div class="col-sm-12 " style="text-align: center">
                                         <h2>Formulário</h2>
                                     </div>
-                                    
-                                    <form action="" class="contact-form" >
-                                        
+
+                                    <form  class="contact-form" method="POST" name="enviar" id="formCadastro" action="enviar.php" >
+
                                         <div class="col-sm-12">
                                             <div class="input-block">
                                                 <label for="">Nome Completo</label>
-                                                <input type="text" required autocomplete="off" class="form-control"/>
+                                                <input name="nome"  id="nome" required="true"  type="text" class="form-control"/>
                                               </div>
-                                        
+
                                         <div class="row ">
                                             <div class="col-sm-6">
                                                 <div class="input-block">
                                                     <label for="">Telefone</label>
-                                                    <input type="tel" required autocomplete="off"  class="form-control"/>
+                                                    <input name="telefone" id="tel" required="true" type="tel" class="form-control"/>
                                                   </div>
                                                 </div>
 
                                                 <div class="col-sm-6">
                                                     <div class="input-block">
                                                         <label for="">Email</label>
-                                                        <input type="email" required autocomplete="off"  class="form-control"/>
+                                                        <input type="email" name="email"  id="email" required="true" class="form-control"/>
                                                       </div>
                                                     </div>
                                                 </div>
 
-                                           
-                                            
+
+
                                             <div class="row ">
+
+                                                <div class="col-sm-12">
+                                                    <div class="input-block">
+                                                        <label for="">Assunto</label>
+                                                        <input name="assunto" id="assunto" type="text" required="true" class="form-control"/>
+                                                      </div>
                                                     <div class="col-sm-12 ">
                                                         <div class="input-block textarea">
                                                             <label for="">Escreva sua mensagem aqui</label>
-                                                            <textarea rows="5" type="text" required autocomplete="off" class="form-control"></textarea>
+                                                            <textarea rows="5" type="text" name="mensagem"  id="mensagem" required="true"  class="form-control"></textarea>
                                                           </div>
                                                     </div>
                                                     </div>
 
                                                     <div class="col-sm-12">
-                                                        <button class="square-button">Enviar</button>
+                                                        <button class="square-button" type="submit" value="Enviar" id="submit">Enviar</button>
                                                       </div>
                                                 </form>
-                                
+
                             </div>
                         </div>
                         </div>
@@ -145,19 +155,19 @@
                                 <div class="row " >
                                      <div class="col-lg-12">
                                         <div class="titulo-bloco2">
-                                               
+
                                         </div>
                                     </div>
-    
+
                 </div>
             </div>
     </div>
     </div>
 
 
- 
 
-   
+
+
 
 
 
@@ -165,7 +175,7 @@
 
     </div>
 
-    
+
 
     <footer id="footer">
         <div class="footer-top" >
@@ -178,9 +188,9 @@
                     </div>
                     <div class="col-lg-4 col-md-4 footer-end">
                         <h1>ENDEREÇO</h1>
-                        <p>Rua Tupanaci 256,  Vila Gumercindo </p><p>  
-                        São Paulo, SP</p>  
-                        
+                        <p>Rua Tupanaci 256,  Vila Gumercindo </p><p>
+                        São Paulo, SP</p>
+
                     </div>
                     <div class="col-lg-4 col-md-4 footer-contact">
                         <h1>HORÁRIOS</h1>
@@ -188,7 +198,7 @@
                         <p>09:00 - 20:00</p>
 
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -206,12 +216,12 @@
                             <h3>
                                 SIGA-NOS
                             </h3>
-                        </div> 
-                    </div> 
-                        
+                        </div>
+                    </div>
+
                         </div>
                         <div class="col-lg-2 col-md-4 footer-links siga-nos-icons ">
-                            
+
                             <div class="siganos-icons">
                                 <div class="siganos-icons-2">
                                  <div class="face">
@@ -226,18 +236,18 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 84.359 84.359">
                                                     <path id="instagram-brands" d="M42.114,52.376A21.629,21.629,0,1,0,63.738,74,21.592,21.592,0,0,0,42.114,52.376Zm0,35.69A14.061,14.061,0,1,1,56.172,74,14.085,14.085,0,0,1,42.114,88.066ZM69.666,51.491a5.044,5.044,0,1,1-5.044-5.045A5.033,5.033,0,0,1,69.666,51.491Zm14.322,5.12c-.32-6.758-1.863-12.744-6.813-17.676C72.244,34,66.26,32.46,59.5,32.121c-6.963-.4-27.834-.4-34.8,0-6.737.32-12.722,1.864-17.672,6.8S.56,49.835.221,56.593c-.4,6.965-.4,27.841,0,34.805.32,6.758,1.863,12.744,6.813,17.676s10.915,6.475,17.672,6.814c6.963.4,27.834.4,34.8,0,6.756-.32,12.741-1.864,17.672-6.814,4.931-4.932,6.474-10.918,6.813-17.676.4-6.965.4-27.822,0-34.787Zm-9,42.26a14.235,14.235,0,0,1-8.017,8.019c-5.552,2.2-18.726,1.694-24.861,1.694s-19.328.489-24.861-1.694a14.234,14.234,0,0,1-8.017-8.019C7.034,93.318,7.542,80.141,7.542,74S7.053,54.673,9.236,49.138a14.234,14.234,0,0,1,8.017-8.019c5.552-2.2,18.726-1.694,24.861-1.694s19.328-.489,24.861,1.694a14.235,14.235,0,0,1,8.017,8.019c2.2,5.553,1.694,18.73,1.694,24.866S77.194,93.337,74.992,98.871Z" transform="translate(0.075 -31.825)" fill="#fff"/>
                                                   </svg>
-                                                  
+
                                             </div>
                                   </div>
-                         
-                            
+
+
                             </div>
-                        </div> 
+                        </div>
                         </div>
             </div>
         </div>
         </div>
-        
+
     </footer>
 
 
@@ -295,9 +305,10 @@
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
 //]]></script>
 
-<script>
 
-//material contact form animation
+
+<script>
+    //material contact form animation
 $('.contact-form').find('.form-control').each(function() {
   var targetItem = $(this).parent();
   if ($(this).val()) {
@@ -306,14 +317,20 @@ $('.contact-form').find('.form-control').each(function() {
       'fontSize': '14px'
     });
   }
-})
+});
+</script>
+
+<script>
 $('.contact-form').find('.form-control').focus(function() {
-  $(this).parent('.input-block').addClass('focus');
-  $(this).parent().find('label').animate({
-    'top': '10px',
-    'fontSize': '14px'
-  }, 300);
-})
+    $(this).parent('.input-block').addClass('focus');
+    $(this).parent().find('label').animate({
+      'top': '10px',
+      'fontSize': '14px'
+    }, 300);
+  });
+  </script>
+
+<script>
 $('.contact-form').find('.form-control').blur(function() {
   if ($(this).val().length == 0) {
     $(this).parent('.input-block').removeClass('focus');
@@ -322,11 +339,13 @@ $('.contact-form').find('.form-control').blur(function() {
       'fontSize': '18px'
     }, 300);
   }
-})
-
+});
 </script>
 
+
+
 <script>
+
     var map
     function initMap(){
         var location = {lat: -23.6, lng: -46.618520 };
@@ -349,9 +368,9 @@ $('.contact-form').find('.form-control').blur(function() {
       }
 
     }
-    
-
 </script>
+
+
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNez26X3kUwSUhG53cd5OGnCVbahbF3RA&callback=initMap"
   type="text/javascript"></script>
